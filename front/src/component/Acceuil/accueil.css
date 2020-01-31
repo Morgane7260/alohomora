@@ -1,0 +1,94 @@
+/* NAV */
+
+.contain {
+  grid-column-start: f;
+  grid-column-end: f3;
+  grid-row-start: g1;
+  grid-row-end: g2;
+  background: #1e1e1e;
+  padding: 1%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.logo {
+  margin-top: -4vh;
+  width: 14vh;
+}
+
+.liens {
+  display: flex;
+  flex-direction: row;
+}
+
+.lien {
+  padding: 2vw 4vw 2vw 4vw;
+  color: white;
+  font-size: 3vh;
+}
+
+.lien:hover {
+  color: white;
+  font-weight: bold;
+  background: #131313;
+}
+
+/* Accueil */
+
+.grid {
+  display: grid;
+  grid-template-columns: [f] 20vh [f2] auto [f3];
+  grid-template-rows: [g1] 20vh [g2] 90vh [g3]  10vh [g4];
+  justify-items: stretch;
+  align-items: stretch;
+}
+
+
+.article1 {
+  grid-column-start: f;
+  grid-column-end: f3;
+  grid-row-start: g2;
+  grid-row-end: g3;
+  text-align: center;
+  margin: 5vh 3vh 1vh 3vh;
+  border: 4px #1e1e1e double;
+  background: url("../../images/poudlard.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.titre {
+  margin-top: 5vh;
+  font-size: 10vh;
+  font-style: italic;
+  background: rgba(30, 30, 30, 0.747);
+  color: white;
+}
+
+.contenu{
+    margin-top: 30vh;
+    color: white;
+    font-size: 3vh;
+    background: rgba(30, 30, 30, 0.288);
+}
+
+
+/* FOOTER */
+
+.footer{
+    grid-column-start: f;
+    grid-column-end: f3;
+    grid-row-start: g3;
+    grid-row-end: g4;
+    background: #1E1E1E;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: -6vh;
+}
+
+.logo-footer{
+    width: 15vh;
+    color: white;
+}
