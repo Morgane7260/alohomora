@@ -1,7 +1,6 @@
 import React from "react";
 import github from "../../images/github.png";
 import wild from "../../images/wild.png";
-import "./accueil.css";
 
 function Footer(){
     return(
