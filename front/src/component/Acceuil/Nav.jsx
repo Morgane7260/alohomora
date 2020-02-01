@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../../images/logo2.jpg";
-// import './accueil.css';
+import "./nav.css";
 
 function Nav() {
   return (
@@ -12,7 +12,7 @@ function Nav() {
         <Link to="/alohomora/oeuvres" className="lien">Oeuvres</Link>
         <Link to="/personnages" className="lien">Personnages</Link>
         <Link to="/actualites" className="lien">Actualités</Link>
-        <Link to="/connection" className="lien">Connexion</Link>
+        <Link to="/connexion" className="lien">Connexion</Link>
       </ul>
     </div>
   );

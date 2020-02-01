@@ -1,0 +1,26 @@
+const express = require('express');
+
+const router = express.Router();
+const bodyParser = require('body-parser');
+const connection = require('../conf');
+
+router.use(bodyParser.json());
+router.use(
+  bodyParser.urlencoded({
+    extended: true
+  })
+);
+
+router.post('/', (req, res) => {
+  const formData = req.body;
+  connection.query('INSERT INTO user SET ?', formData, err => {
+    if (err) {
+      console.log(err);
+      res.status(500).send("Erreur lors de la saisie d'un utilisateur.");
+    } else {
+      res.sendStatus(200);
+    }
+  });
+});
+
+module.exports = router;

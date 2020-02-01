@@ -66,6 +66,7 @@
   width: 160vh;
   flex-wrap: wrap;
   justify-content: space-around;
+  margin-left: 15vh;
 }
 
 .oeuvres-card {
@@ -79,6 +80,8 @@
 .oeuvres-image {
   width: 44vh;
   height: 60vh;
+  border: 1vh rgb(122, 120, 120) double;
+  padding: 0.3vh;
 }
 
 .oeuvres-card-body {
@@ -91,6 +94,7 @@
     height: 5vh;
     background-color: rgb(58, 58, 58);
     color: white;
+    align-items: flex-end;
 }
 /* FOOTER */
 

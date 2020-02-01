@@ -45,8 +45,10 @@ class Oeuvres extends Component {
                 <h2>{oeuvre.nom}</h2>
                 <p className="oeuvres-card-soustitre">{oeuvre.autre}</p>
                 <p className="oeuvres-card-resume">{oeuvre.résumé}</p>
-                <Link to={`/alohomora/oeuvres/${id}`} ><button className="oeuvres-button">Clique pas y'a R</button></Link>
               </div>
+                <Link to={`/alohomora/oeuvres/${id}`}>
+                  <button className="oeuvres-button">Clique pas y'a R</button>
+                </Link>
             </div>
           ))}
         </div>

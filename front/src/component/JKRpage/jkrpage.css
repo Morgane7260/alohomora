@@ -1,7 +1,10 @@
+@import url("https://fonts.googleapis.com/css?family=Amatic+SC&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Josefin+Slab&display=swap");
+
 .jkr-grid2 {
   display: grid;
   grid-template-columns: [f] 20vh [f2] auto [f3];
-  grid-template-rows: [g1] 20vh [g2] 240vh [g3] 10vh [g4];
+  grid-template-rows: [g1] 20vh [g2] auto [g3] 10vh [g4];
   justify-items: stretch;
   align-items: stretch;
   background-color: rgb(58, 58, 58);
@@ -13,30 +16,58 @@
   grid-row-start: g2;
   grid-row-end: g3;
   border: 1vh #1e1e1e double;
-  box-shadow: 2vh black;
+  box-shadow: 1vh 1vh 1vh 1vh black;
   margin: 2vh;
-  background: white;
+  background: url("../../images/jkr-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
 }
 
 .jkr-title {
+  font-family: "Amatic SC", cursive;
   text-align: center;
-  font-size: 5vh;
+  font-size: 7vh;
 }
 
 .jkr-image {
-  align-self: center;
+  margin-left: 35vh;
+  margin-right: 35vh;
   border: 3px #1e1e1e solid;
 }
 
 .jkr-soustitre {
+  font-family: "Amatic SC", cursive;
   text-align: center;
-  font-size: 4vh;
-  margin-top: 1vh;
-  margin-bottom: 1vh;
+  font-size: 5vh;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  color: #1e1e1e;
+  background: rgba(30, 30, 30, 0.24);
 }
 
+.margin-text {
+  margin-left: 4vh;
+  margin-right: 4vh;
+  font-family: "Josefin Slab", serif;
+  font-size: 2.3vh;
+}
+
+.text {
+  font-family: "Josefin Slab", serif;
+  font-size: 2.3vh;
+}
+
+.bg {
+  background: rgba(255, 255, 255, 0.658);
+  margin: 5vh;
+  border-radius: 2vh;
+}
+
+h4 {
+  margin-left: 4vh;
+}
 /* FOOTER */
 
 .footer {
