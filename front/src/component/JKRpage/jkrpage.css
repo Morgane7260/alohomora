@@ -1,0 +1,38 @@
+.jkr-grid2 {
+  display: grid;
+  grid-template-columns: [f] 20vh [f2] auto [f3];
+  grid-template-rows: [g1] 20vh [g2] 240vh [g3] 10vh [g4];
+  justify-items: stretch;
+  align-items: stretch;
+  background-color: rgb(58, 58, 58);
+}
+
+.jkr-page{
+    grid-column-start: f;
+    grid-column-end: f3;
+    grid-row-start: g2;
+    grid-row-end: g3;
+    border: 1vh #1E1E1E double;
+    box-shadow: 2vh black;
+    margin: 2vh;
+    background: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.jkr-title{
+    text-align: center;
+    font-size: 5vh;
+}
+
+.jkr-image{
+    align-self: center;
+    border: 3px #1E1E1E solid;
+}
+
+.jkr-soustitre{
+    text-align: center;
+    font-size: 4vh;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
