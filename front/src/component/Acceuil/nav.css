@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Jim+Nightshade&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC&display=swap');
 
-link {
-  font-family: "Jim Nightshade", cursive;
+.lien {
+  font-family: 'Amatic SC', cursive;
 }
