@@ -30,7 +30,7 @@
 .lien {
   padding: 2vw 4vw 2vw 4vw;
   color: white;
-  font-size: 3vh;
+  font-size: 4vh;
 }
 
 .lien:hover {
@@ -61,12 +61,8 @@
 
 .oeuvres-contain {
   display: flex;
-  flex-direction: row;
-  flex-grow: 2;
-  width: 160vh;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin-left: 15vh;
 }
 
 .oeuvres-card {
@@ -74,9 +70,13 @@
   margin: 2vh;
   width: 45vh;
   background: white;
-  box-shadow: 1vh 1vh 1vh 1vh rgb(39, 37, 37);
+  box-shadow: 2vh 2vh 3vh 1vh rgb(39, 37, 37);
+  display: flex;
+  flex-direction: column;
 }
-
+.button-end {
+  justify-content: flex-end;
+}
 .oeuvres-image {
   width: 44vh;
   height: 60vh;
@@ -84,17 +84,26 @@
   padding: 0.3vh;
 }
 
-.oeuvres-card-body {
-  display: flex;
-  flex-direction: column;
+.oeuvres-button {
+  width: 100%;
+  height: 6vh;
+  background-color: rgb(58, 58, 58);
+  color: white;
 }
 
-.oeuvres-button{
-    width: 100%;
-    height: 5vh;
-    background-color: rgb(58, 58, 58);
-    color: white;
-    align-items: flex-end;
+.oeuvres-card-soustitre {
+  font-size: 1.5vh;
+}
+
+.oeuvres-card-resume {
+  font-size: 2vh;
+}
+
+.oeuvres-card-titre {
+  font-size: 4vh;
+  text-align: center;
+  background: rgba(30, 30, 30, 0.342);
+  border: 0.3vh solid #1e1e1e;
 }
 /* FOOTER */
 
