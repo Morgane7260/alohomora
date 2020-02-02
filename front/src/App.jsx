@@ -4,6 +4,7 @@ import Accueil from "./component/Acceuil/Accueil";
 import "./component/Acceuil/accueil.css";
 import JKRpage from "./component/JKRpage/JKRpage";
 import Oeuvres from "./component/Oeuvres/Oeuvres";
+import Personnages from "./component/Personnages/Personnages";
 
 function App() {
   return (
@@ -17,6 +18,9 @@ function App() {
         </Route>
         <Route path="/alohomora/oeuvres">
           <Oeuvres/>
+        </Route>
+        <Route path="/alohomora/personnages">
+          <Personnages />
         </Route>
       </Switch>
     </div>
