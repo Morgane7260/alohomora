@@ -1,6 +1,6 @@
 .users-grid {
   display: grid;
-  grid-template-columns: [f] 40vh [f2] auto [f3] 40vh [f4];
+  grid-template-columns: [f] 40vh [f2] auto [f3];
   grid-template-rows: [g1] 20vh [g2] 120vh [g3] 10vh [g4];
   background-color: rgb(58, 58, 58);
 }

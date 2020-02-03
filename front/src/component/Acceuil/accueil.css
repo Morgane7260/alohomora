@@ -49,7 +49,7 @@
 
 .article1 {
   grid-column-start: f;
-  grid-column-end: f3;
+  grid-column-end: f4;
   grid-row-start: g2;
   grid-row-end: g3;
   text-align: center;
