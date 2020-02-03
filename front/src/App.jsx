@@ -5,6 +5,7 @@ import "./component/Acceuil/accueil.css";
 import JKRpage from "./component/JKRpage/JKRpage";
 import Oeuvres from "./component/Oeuvres/Oeuvres";
 import Filtres from "./component/Personnages/Filtres";
+import Connexion from "./component/Users/Connexion";
 import Inscription from "./component/Users/Inscription";
 
 function App() {
@@ -20,7 +21,10 @@ function App() {
         <Route path="/alohomora/oeuvres">
           <Oeuvres />
         </Route>
-        <Route path="/connexion">
+        <Route path="/alohomora/connexion">
+          <Connexion />
+        </Route>
+        <Route path="/alohomora/inscription">
           <Inscription />
         </Route>
         <Route path="/alohomora/personnages">

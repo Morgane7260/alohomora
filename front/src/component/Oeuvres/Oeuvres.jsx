@@ -1,16 +1,20 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 import axios from "axios";
 import "./oeuvres.css";
 import Nav from "../Acceuil/Nav";
 import Footer from "../Acceuil/Footer";
+import { Modal } from "reactstrap";
 
 class Oeuvres extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      oeuvres: []
+      oeuvres: [],
+      modalIsOpen: false,
+      openItem: null
     };
+    this.openModal = this.openModal.bind(this);
+    this.closeModal = this.closeModal.bind(this);
   }
 
   componentDidMount() {
@@ -27,8 +31,16 @@ class Oeuvres extends Component {
       });
   }
 
+  openModal(oeuvreId) {
+    this.setState({ modalIsOpen: true, openItem: oeuvreId });
+  }
+
+  closeModal() {
+    this.setState({ modalIsOpen: false });
+  }
+
   render() {
-    const { oeuvres } = this.state;
+    const { oeuvres, openItem, modalIsOpen } = this.state;
     return (
       <div className="oeuvres-grid">
         <Nav />
@@ -45,9 +57,26 @@ class Oeuvres extends Component {
                 <h2 className="oeuvres-card-titre">{oeuvre.nom}</h2>
                 <p className="oeuvres-card-soustitre">{oeuvre.autre}</p>
                 <p className="oeuvres-card-resume">{oeuvre.résumé}</p>
-                <Link to={`/alohomora/oeuvres/${id}`}>
-                  <button className="oeuvres-button">Clique pas y'a R</button>
-                </Link>
+
+                <button
+                  key={id}
+                  className="oeuvres-button"
+                  onClick={() => this.openModal(oeuvre.id)}
+                >
+                  Clique pas y'a R
+                </button>
+                <Modal className="oeuvres-modal" isOpen={openItem === oeuvre.id ? modalIsOpen : false}>
+                  <img
+                    src={oeuvre.image}
+                    alt={oeuvre.nom}
+                    className="oeuvres-image-modal"
+                  />
+                  <h2>{oeuvre.nom}</h2>
+                  <div>{oeuvre.résumé}</div>
+                  <button className="oeuvres-button" onClick={this.closeModal}>
+                    Fermer
+                  </button>
+                </Modal>
               </div>
             </div>
           ))}

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { AvForm, AvField } from "availity-reactstrap-validation";
 import axios from "axios";
-
+import { Link } from "react-router-dom";
 import "./inscription.css";
 import Nav from "../Acceuil/Nav";
 import Footer from "../Acceuil/Footer";
@@ -105,7 +105,8 @@ class Inscription extends Component {
               }}
             />
           </div>
-          <button color="primary">Valider</button>
+          <button className="users-button">S'enregistrer</button>
+          <Link to="/alohomora/connexion">Vous avez déjà un compte ?</Link>
         </AvForm>
         <Footer />
       </div>
