@@ -13,7 +13,7 @@ router.use('/side', side);
 router.use('/types', types);
 router.use('/maisons', maisons);
 router.use('/personnages', personnages);
-router.use('./inscription', inscription);
+router.use('/inscription', inscription);
 router.use('/oeuvres', oeuvres);
 
 module.exports = router;

@@ -13,12 +13,12 @@ router.use(
 
 router.post('/', (req, res) => {
   const formData = req.body;
-  connection.query('INSERT INTO users SET ?', [formData], (err, results) => {
+  connection.query('INSERT INTO users SET ?', [formData], err => {
     if (err) {
       console.log(err);
       res.status(500).send("Erreur lors de la saisie d'un utilisateur.");
     } else {
-      results.sendStatus(200);
+      res.status(200);
     }
   });
 });

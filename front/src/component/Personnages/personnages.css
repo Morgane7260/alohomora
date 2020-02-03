@@ -26,6 +26,7 @@
   flex-direction: row;
   margin-top: 2vh;
   justify-content: center;
+  padding: 1vh;
 }
 
 .filtre-contain {
@@ -37,8 +38,9 @@
   margin-top: 2vh;
 }
 
-.choix{
-    background: rgba(30, 30, 30, 0.5);
-    border: 4px rgb(122, 120, 120) solid;
-    color: rgb(226, 222, 222);
+.choix {
+  padding: 1.5vh;
+  background: rgba(30, 30, 30, 0.5);
+  border: 4px rgb(122, 120, 120) solid;
+  color: rgb(226, 222, 222);
 }
