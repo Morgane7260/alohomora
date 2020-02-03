@@ -35,20 +35,20 @@ class Oeuvres extends Component {
         <h1 className="oeuvres-titre">Livres</h1>
         <div className="oeuvres-contain">
           {oeuvres.map((oeuvre, id) => (
-            <div className="oeuvres-card" key={id}>
-              <img
-                src={oeuvre.image}
-                alt={oeuvre.nom}
-                className="oeuvres-image"
-              />
-              <div className="oeuvres-card-body">
-                <h2>{oeuvre.nom}</h2>
+            <div className="button-end">
+              <div className="oeuvres-card" key={id}>
+                <img
+                  src={oeuvre.image}
+                  alt={oeuvre.nom}
+                  className="oeuvres-image"
+                />
+                <h2 className="oeuvres-card-titre">{oeuvre.nom}</h2>
                 <p className="oeuvres-card-soustitre">{oeuvre.autre}</p>
                 <p className="oeuvres-card-resume">{oeuvre.résumé}</p>
-              </div>
                 <Link to={`/alohomora/oeuvres/${id}`}>
                   <button className="oeuvres-button">Clique pas y'a R</button>
                 </Link>
+              </div>
             </div>
           ))}
         </div>

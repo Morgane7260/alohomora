@@ -5,6 +5,7 @@ import "./component/Acceuil/accueil.css";
 import JKRpage from "./component/JKRpage/JKRpage";
 import Oeuvres from "./component/Oeuvres/Oeuvres";
 import Personnages from "./component/Personnages/Personnages";
+import Inscription from "./component/Users/Inscription";
 
 function App() {
   return (
@@ -17,7 +18,10 @@ function App() {
           <JKRpage />
         </Route>
         <Route path="/alohomora/oeuvres">
-          <Oeuvres/>
+          <Oeuvres />
+        </Route>
+        <Route path="/connexion">
+          <Inscription />
         </Route>
         <Route path="/alohomora/personnages">
           <Personnages />
