@@ -1,0 +1,20 @@
+.persos{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.perso-card{
+    width: 35vh;
+    border: 1vh #1E1E1E double;
+    box-shadow: 2vh 2vh 2vh 2vh #1E1E1E;
+    background: white;
+}
+
+.persos-grid{
+    background-color: rgb(58, 58, 58);
+}
+
+.persos-image{
+    width: 33vh;
+    border: 1vh rgb(122, 120, 120) double;
+}

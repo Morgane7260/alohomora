@@ -10,7 +10,7 @@ function Nav() {
       <ul className="liens">
           <Link to="/alohomora/JKRowling" className="lien">Qui est J.K.Rowling ?</Link>
         <Link to="/alohomora/oeuvres" className="lien">Oeuvres</Link>
-        <Link to="/personnages" className="lien">Personnages</Link>
+        <Link to="/alohomora/personnages" className="lien">Personnages</Link>
         <Link to="/actualites" className="lien">Actualités</Link>
         <Link to="/connexion" className="lien">Connexion</Link>
       </ul>
