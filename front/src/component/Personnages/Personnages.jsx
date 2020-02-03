@@ -1,8 +1,6 @@
 import React, { Component } from "react";
-import Nav from "../Acceuil/Nav";
 import axios from "axios";
-import Footer from "../Acceuil/Footer";
-import './personnages.css';
+import "./personnages.css";
 
 class Personnages extends Component {
   constructor(props) {
@@ -30,26 +28,55 @@ class Personnages extends Component {
   }
 
   render() {
+    const {
+      activeMaisonFilter,
+      activeTypeFilter,
+      activeSideFilter
+    } = this.props;
     const { personnages } = this.state;
+    const filteredPersonnages = personnages
+      .filter(
+        personnage =>
+          !activeMaisonFilter || personnage.maison === activeMaisonFilter
+      )
+      .filter(
+        personnage =>
+          !activeTypeFilter || personnage.type === activeTypeFilter
+      )
+      .filter(
+        personnage =>
+          !activeSideFilter || personnage.side === activeSideFilter
+      );
     return (
-      <div className="persos-grid">
-        <Nav />
-        <div className="persos-contain">
-          <h1>Les personnages</h1>
-          <div className="persos">
-            {personnages.map((personnage, id) => (
-              <div className="perso-card" key={id}>
-                <img src={personnage.image} alt={personnage.nom} className="persos-image"/>
-                <h1>{personnage.nom}</h1>
-                <p><strong>Type: </strong>{personnage.type}</p>
-                <p><strong>Côté: </strong>{personnage.side}</p>
-                <p><strong>Maison: </strong>{personnage.maison}</p>
-                <p><strong>Acteur: </strong>{personnage.acteur}</p>
-              </div>
-            ))}
-          </div>
+      <div className="persos-contain">
+        <div className="persos">
+          {filteredPersonnages.map((personnage, id) => (
+            <div className="perso-card" key={id}>
+              <img
+                src={personnage.image}
+                alt={personnage.nom}
+                className="persos-image"
+              />
+              <h1>{personnage.nom}</h1>
+              <p>
+                <strong>Type: </strong>
+                {personnage.type}
+              </p>
+              <p>
+                <strong>Côté: </strong>
+                {personnage.side}
+              </p>
+              <p>
+                <strong>Maison: </strong>
+                {personnage.maison}
+              </p>
+              <p>
+                <strong>Acteur: </strong>
+                {personnage.acteur}
+              </p>
+            </div>
+          ))}
         </div>
-        <Footer />
       </div>
     );
   }

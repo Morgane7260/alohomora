@@ -4,7 +4,7 @@ import Accueil from "./component/Acceuil/Accueil";
 import "./component/Acceuil/accueil.css";
 import JKRpage from "./component/JKRpage/JKRpage";
 import Oeuvres from "./component/Oeuvres/Oeuvres";
-import Personnages from "./component/Personnages/Personnages";
+import Filtres from "./component/Personnages/Filtres";
 import Inscription from "./component/Users/Inscription";
 
 function App() {
@@ -24,7 +24,7 @@ function App() {
           <Inscription />
         </Route>
         <Route path="/alohomora/personnages">
-          <Personnages />
+          <Filtres />
         </Route>
       </Switch>
     </div>
