@@ -6,10 +6,7 @@ class Personnages extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      personnages: [],
-      filteredByHouse: "None",
-      filteredByType: "None",
-      filteredBySide: "None"
+      personnages: []
     };
   }
 

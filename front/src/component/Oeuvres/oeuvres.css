@@ -59,6 +59,21 @@
   background: rgba(30, 30, 30, 0.603);
 }
 
+.to-comment {
+  text-align: center;
+}
+
+.a{
+  color: white;
+  font-size: 2vh;
+  background: rgb(65, 65, 65);
+}
+
+.a:hover{
+  color: rgb(65, 65, 65);
+  background: rgb(161, 161, 161);
+}
+
 .oeuvres-contain {
   display: flex;
   flex-wrap: wrap;
@@ -84,7 +99,7 @@
   padding: 0.3vh;
 }
 
-.oeuvres-modal{
+.oeuvres-modal {
   width: 100vh;
 }
 

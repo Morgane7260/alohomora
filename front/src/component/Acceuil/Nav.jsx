@@ -12,7 +12,7 @@ function Nav() {
         <Link to="/alohomora/oeuvres" className="lien">Oeuvres</Link>
         <Link to="/alohomora/personnages" className="lien">Personnages</Link>
         <Link to="/actualites" className="lien">Actualités</Link>
-        <Link to="/connexion" className="lien">Connexion</Link>
+        <Link to="/alohomora/connexion" className="lien">Connexion</Link>
       </ul>
     </div>
   );

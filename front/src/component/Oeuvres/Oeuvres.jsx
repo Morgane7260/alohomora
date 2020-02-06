@@ -4,6 +4,7 @@ import "./oeuvres.css";
 import Nav from "../Acceuil/Nav";
 import Footer from "../Acceuil/Footer";
 import { Modal } from "reactstrap";
+import Commentaires from "./Commentaires";
 
 class Oeuvres extends Component {
   constructor(props) {
@@ -45,6 +46,9 @@ class Oeuvres extends Component {
       <div className="oeuvres-grid">
         <Nav />
         <h1 className="oeuvres-titre">Livres</h1>
+        <p className="to-comment">
+          <a href="#Commentaires" className="a">Accéder aux commentaires</a>
+          </p>
         <div className="oeuvres-contain">
           {oeuvres.map((oeuvre, id) => (
             <div className="button-end">
@@ -65,7 +69,10 @@ class Oeuvres extends Component {
                 >
                   Clique pas y'a R
                 </button>
-                <Modal className="oeuvres-modal" isOpen={openItem === oeuvre.id ? modalIsOpen : false}>
+                <Modal
+                  className="oeuvres-modal"
+                  isOpen={openItem === oeuvre.id ? modalIsOpen : false}
+                >
                   <img
                     src={oeuvre.image}
                     alt={oeuvre.nom}
@@ -80,6 +87,9 @@ class Oeuvres extends Component {
               </div>
             </div>
           ))}
+        </div>
+        <div className="Commentaires">
+          <Commentaires />
         </div>
         <Footer />
       </div>

@@ -1,0 +1,72 @@
+.comment-titre {
+  grid-column-start: f;
+  grid-column-end: f3;
+  text-align: center;
+  font-size: 6vh;
+  color: white;
+  background: rgba(30, 30, 30, 0.603);
+}
+
+.comments-contain {
+  width: auto;
+  margin: 3vh;
+  border: 1vh rgb(65, 65, 65) double;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.comment-contain {
+  border: 1px solid black;
+  margin-left: 4vh;
+  margin-right: 4vh;
+  width: 170vh;
+}
+
+.comment-top {
+  background: rgba(65, 65, 65, 0.5);
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+}
+
+.comment-nom{
+    font-size: 2.5vh;
+}
+
+.comment-oeuvre{
+    font-size: 2vh;
+}
+
+.comment-message {
+    margin-top: 1vh;
+    margin-left: 1vh;
+  font-size: 2vh;
+}
+
+.comments-post {
+  width: 50vh;
+  border: 2px rgb(65, 65, 65) solid;
+  justify-content: center;
+  display: flex;
+  margin-top: 4vh;
+  margin-bottom: 4vh;
+}
+
+.comment-post {
+  display: flex;
+  flex-direction: column;
+  width: 40vh;
+  margin: 1vh;
+}
+
+.comment-text{
+    height: 10vh;
+}
+
+.comment-button{
+    background: rgb(65, 65, 65);
+    color: white;
+    box-shadow: 0.1vh 0.1vh 0.1vh 0.1vh rgb(65, 65, 65);
+}
