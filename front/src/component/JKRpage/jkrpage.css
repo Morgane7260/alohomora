@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css?family=Amatic+SC&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Josefin+Slab&display=swap");
+
+.jkr-grid2 {
+  display: grid;
+  grid-template-columns: [f] 20vh [f2] auto [f3];
+  grid-template-rows: [g1] 20vh [g2] auto [g3] 10vh [g4];
+  justify-items: stretch;
+  align-items: stretch;
+  background-color: rgb(58, 58, 58);
+}
+
+.jkr-page {
+  grid-column-start: f;
+  grid-column-end: f3;
+  grid-row-start: g2;
+  grid-row-end: g3;
+  border: 1vh #1e1e1e double;
+  box-shadow: 1vh 1vh 1vh 1vh black;
+  margin: 2vh;
+  background: url("../../images/jkr-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+}
+
+.jkr-title {
+  font-family: "Amatic SC", cursive;
+  text-align: center;
+  font-size: 7vh;
+}
+
+.jkr-image {
+  margin-left: 35vh;
+  margin-right: 35vh;
+  border: 3px #1e1e1e solid;
+}
+
+.jkr-soustitre {
+  font-family: "Amatic SC", cursive;
+  text-align: center;
+  font-size: 5vh;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  color: #1e1e1e;
+  background: rgba(30, 30, 30, 0.24);
+}
+
+.margin-text {
+  margin-left: 4vh;
+  margin-right: 4vh;
+  font-family: "Josefin Slab", serif;
+  font-size: 2.3vh;
+}
+
+.text {
+  font-family: "Josefin Slab", serif;
+  font-size: 2.3vh;
+}
+
+.bg {
+  background: rgba(255, 255, 255, 0.658);
+  margin: 5vh;
+  border-radius: 2vh;
+}
+
+h4 {
+  margin-left: 4vh;
+}
+/* FOOTER */
+
+.footer {
+  grid-column-start: f;
+  grid-column-end: f3;
+  grid-row-start: g3;
+  grid-row-end: g4;
+  background: #1e1e1e;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: -6vh;
+  box-shadow: 3vh 0px 0px 0px rgb(39, 37, 37);
+}
+
+.logo-footer {
+  width: 15vh;
+  color: white;
+}
+
+/* NAV */
+
+.contain {
+  grid-column-start: f;
+  grid-column-end: f3;
+  grid-row-start: g1;
+  grid-row-end: g2;
+  background: #1e1e1e;
+  padding: 1%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  box-shadow: 0px 0px 2vh 0px rgb(39, 37, 37);
+}
+
+.logo {
+  margin-top: -4vh;
+  width: 14vh;
+}
+
+.liens {
+  display: flex;
+  flex-direction: row;
+}
+
+.lien {
+  padding: 2vw 4vw 2vw 4vw;
+  color: white;
+  font-size: 4vh;
+}
+
+.lien:hover {
+  color: white;
+  font-weight: bold;
+  background: #131313;
+}

@@ -2,13 +2,33 @@ import React from "react";
 import { Route, Switch } from "react-router-dom";
 import Accueil from "./component/Acceuil/Accueil";
 import "./component/Acceuil/accueil.css";
+import JKRpage from "./component/JKRpage/JKRpage";
+import Oeuvres from "./component/Oeuvres/Oeuvres";
+import Filtres from "./component/Personnages/Filtres";
+import Connexion from "./component/Users/Connexion";
+import Inscription from "./component/Users/Inscription";
 
 function App() {
   return (
     <div>
       <Switch>
-        <Route exact path="/">
+        <Route exact path="/alohomora">
           <Accueil />
+        </Route>
+        <Route path="/alohomora/JKRowling">
+          <JKRpage />
+        </Route>
+        <Route path="/alohomora/oeuvres">
+          <Oeuvres />
+        </Route>
+        <Route path="/alohomora/connexion">
+          <Connexion />
+        </Route>
+        <Route path="/alohomora/inscription">
+          <Inscription />
+        </Route>
+        <Route path="/alohomora/personnages">
+          <Filtres />
         </Route>
       </Switch>
     </div>

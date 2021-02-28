@@ -1,0 +1,90 @@
+.users-grid {
+  display: grid;
+  grid-template-columns: [f] 40vh [f2] auto [f3];
+  grid-template-rows: [g1] 20vh [g2] 120vh [g3] 10vh [g4];
+  background-color: rgb(58, 58, 58);
+}
+
+.Form_Connexion {
+  grid-column-start: f2;
+  grid-column-end: f3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vh;
+  height: 35vh;
+  border: 1vh #1e1e1e double;
+  background: white;
+  border-radius: 2vh;
+}
+
+.form {
+  margin: 2vh;
+  width: 70vh;
+}
+
+.users-button{
+  background: rgb(58, 58, 58);
+  color: white;
+  padding: 1vh;
+  border-radius: 2vh;
+  box-shadow: .1vh .1vh 0.1vh .1vh rgb(85, 83, 83);
+}
+
+/* NAV */
+
+.contain {
+  grid-column-start: f;
+  grid-column-end: f4;
+  grid-row-start: g1;
+  grid-row-end: g2;
+  background: #1e1e1e;
+  padding: 1%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  box-shadow: 0px 0px 2vh 0px rgb(39, 37, 37);
+}
+
+.logo {
+  margin-top: -4vh;
+  width: 14vh;
+}
+
+.liens {
+  display: flex;
+  flex-direction: row;
+}
+
+.lien {
+  padding: 2vw 4vw 2vw 4vw;
+  color: white;
+  font-size: 4vh;
+}
+
+.lien:hover {
+  color: white;
+  font-weight: bold;
+  background: #131313;
+}
+
+/* FIN NAV */
+/* FOOTER */
+
+.footer {
+  grid-column-start: f;
+  grid-column-end: f4;
+  grid-row-start: g3;
+  grid-row-end: g4;
+  background: #1e1e1e;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: -6vh;
+  box-shadow: 3vh 0px 0px 0px rgb(39, 37, 37);
+}
+
+.logo-footer {
+  width: 15vh;
+  color: white;
+}

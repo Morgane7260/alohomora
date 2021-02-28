@@ -1,0 +1,46 @@
+.persos {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.perso-card {
+  width: 40vh;
+  border: 1vh #1e1e1e double;
+  box-shadow: 2vh 2vh 2vh 2vh #1e1e1e;
+  background: white;
+  margin: 2vh 2vh 2vh 2vh;
+}
+
+.persos-grid {
+  background-color: rgb(58, 58, 58);
+}
+
+.persos-image {
+  width: 38vh;
+  border: 1vh rgb(122, 120, 120) double;
+}
+
+.all-filtres {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2vh;
+  justify-content: center;
+  padding: 1vh;
+}
+
+.filtre-contain {
+  display: flex;
+  flex-direction: column;
+}
+
+.persos-contain {
+  margin-top: 2vh;
+}
+
+.choix {
+  padding: 1.5vh;
+  background: rgba(30, 30, 30, 0.5);
+  border: 4px rgb(122, 120, 120) solid;
+  color: rgb(226, 222, 222);
+}
